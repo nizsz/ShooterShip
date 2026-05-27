@@ -1,16 +1,24 @@
 import pygame
-from level import Level
+
+from code.menu import Menu
+
 
 class Game:
-    """Classe principal. Composição: possui 1 ou mais Levels (1..*)."""
-    def __init__(self, window: pygame.Surface):
-        self.window: pygame.Surface = window
-        # Composição estrita: cria as instâncias de Level internamente
-        self.levels: list[Level] = [
-            Level(self.window, "Fase 1"),
-            Level(self.window, "Fase 2")
-        ]
+    """Classe principal"""
+    def __init__(self):
+        pygame.init()
+        self.window = pygame.display.set_mode((600, 480))
 
     def run(self) -> None:
-        for level in self.levels:
-            level.run()
+
+        while True:
+            menu = Menu(self.window)
+            menu.run()
+
+            pass
+            # Check for all events
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()  # close game
+                    quit()  # end game
+
