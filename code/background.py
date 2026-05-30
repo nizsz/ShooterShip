@@ -1,8 +1,11 @@
-import pygame
-from entity import Entity
+from code.const import WIN_WIDTH, ENTITY_SPEED
+from code.entity import Entity
 
 class Background(Entity):
-    """Classe que representa o plano de fundo do jogo."""
-    def move(self) -> None:
-        # Implementação específica de movimento do Background
-        pass
+    def __init__(self, name: str, position: tuple):
+        super().__init__(name, position)
+
+    def move(self):
+        self.rect.centerx -= ENTITY_SPEED[self.name]
+        if self.rect.right <= 0:
+            self.rect.left = WIN_WIDTH
