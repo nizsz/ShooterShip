@@ -19,6 +19,22 @@ ENTITY_SPEED = {
     "EnemyTwo": 1
 }
 
+ENTITY_HEALTH = {
+    'Level1Cloud0': 999,
+    'Level1Cloud1': 999,
+    'Level1Cloud2': 999,
+    'Level1Cloud3': 999,
+    'PlayerOne': 300,
+    'PlayerTwo': 300,
+    'EnemyOne': 50,
+    'EnemyTwo': 70,
+    'PlayerOneShot': 1,
+    'PlayerTwoShot': 1,
+    'EnemyOneShot': 1,
+    'EnemyTwoShot': 1,
+}
+
+
 
 # M
 MENU_OPTION = ("NEW GAME 1P",
