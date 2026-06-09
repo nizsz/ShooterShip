@@ -14,9 +14,13 @@ ENTITY_SPEED = {
     "Level1Cloud2": 2,
     "Level1Cloud3": 3,
     "PlayerOne": 3,
+    "PlayerOneShoot": 1,
     "PlayerTwo": 3,
-    "EnemyOne": 2,
-    "EnemyTwo": 1
+    "PlayerTwoShoot": 1,
+    "EnemyOne": 1,
+    "EnemyOneShoot": 5,
+    "EnemyTwo": 1,
+    "EnemyTwoShoot": 2,
 }
 
 ENTITY_HEALTH = {
@@ -28,12 +32,18 @@ ENTITY_HEALTH = {
     'PlayerTwo': 300,
     'EnemyOne': 50,
     'EnemyTwo': 70,
-    'PlayerOneShot': 1,
-    'PlayerTwoShot': 1,
-    'EnemyOneShot': 1,
-    'EnemyTwoShot': 1,
+    'PlayerOneShoot': 1,
+    'PlayerTwoShoot': 1,
+    'EnemyOneShoot': 1,
+    'EnemyTwoShoot': 1,
 }
 
+ENTITY_SHOOT_DELAY = {
+    'PlayerOne': 20,
+    'PlayerTwo': 15,
+    'EnemyOne': 100,
+    'EnemyTwo': 200,
+}
 
 
 # M
