@@ -1,11 +1,45 @@
 # C
 import pygame
 
-COLOR_ORANGE = (255, 128, 0)
-COLOR_WHITE = (255, 255, 255)
-COLOR_SELECTION = (255, 255, 0)
+C_ORANGE = (255, 128, 0)
+C_WHITE = (255, 255, 255)
+C_SELECTION = (255, 255, 0)
+C_GREEN = (0, 128, 0)
+C_CYAN = (0, 128, 128)
 
 #E
+
+ENTITY_DAMAGE = {
+    "Level1Cloud0": 0,
+    "Level1Cloud1": 0,
+    "Level1Cloud2": 0,
+    "Level1Cloud3": 0,
+    'PlayerOne': 1,
+    'PlayerOneShoot': 25,
+    'PlayerTwo': 1,
+    'PlayerTwoShoot': 20,
+    'EnemyOne': 1,
+    'EnemyOneShoot': 20,
+    'EnemyTwo': 1,
+    'EnemyTwoShoot': 15,
+}
+
+ENTITY_SCORE = {
+    "Level1Cloud0": 0,
+    "Level1Cloud1": 0,
+    "Level1Cloud2": 0,
+    "Level1Cloud3": 0,
+    'PlayerOne': 0,
+    'PlayerOneShoot': 0,
+    'PlayerTwo': 0,
+    'PlayerTwoShoot': 0,
+    'EnemyOne': 100,
+    'EnemyOneShoot': 0,
+    'EnemyTwo': 125,
+    'EnemyTwoShoot': 0,
+}
+
+
 EVENT_ENEMY = pygame.USEREVENT + 1
 
 ENTITY_SPEED = {
