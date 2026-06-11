@@ -14,6 +14,10 @@ ENTITY_DAMAGE = {
     "Level1Cloud1": 0,
     "Level1Cloud2": 0,
     "Level1Cloud3": 0,
+    'Level2Cloud0': 0,
+    'Level2Cloud1': 0,
+    'Level2Cloud2': 0,
+    'Level2Cloud3': 0,
     'PlayerOne': 1,
     'PlayerOneShoot': 25,
     'PlayerTwo': 1,
@@ -29,6 +33,10 @@ ENTITY_SCORE = {
     "Level1Cloud1": 0,
     "Level1Cloud2": 0,
     "Level1Cloud3": 0,
+    'Level2Cloud0': 0,
+    'Level2Cloud1': 0,
+    'Level2Cloud2': 0,
+    'Level2Cloud3': 0,
     'PlayerOne': 0,
     'PlayerOneShoot': 0,
     'PlayerTwo': 0,
@@ -41,12 +49,17 @@ ENTITY_SCORE = {
 
 
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 ENTITY_SPEED = {
     "Level1Cloud0": 0,
     "Level1Cloud1": 1,
     "Level1Cloud2": 2,
     "Level1Cloud3": 3,
+    'Level2Cloud0': 0,
+    'Level2Cloud1': 1,
+    'Level2Cloud2': 2,
+    'Level2Cloud3': 3,
     "PlayerOne": 3,
     "PlayerOneShoot": 1,
     "PlayerTwo": 3,
@@ -62,6 +75,10 @@ ENTITY_HEALTH = {
     'Level1Cloud1': 999,
     'Level1Cloud2': 999,
     'Level1Cloud3': 999,
+    'Level2Cloud0': 999,
+    'Level2Cloud1': 999,
+    'Level2Cloud2': 999,
+    'Level2Cloud3': 999,
     'PlayerOne': 300,
     'PlayerTwo': 300,
     'EnemyOne': 50,
@@ -116,8 +133,13 @@ PLAYER_KEY_SHOOT = {
 
 # S
 
-SPAWN_TIME = 4000
+SPAWN_TIME = 2000
 
 # W
+
+#T
+TIMEOUT_LEVEL = 20000
+TIMEOUT_STEP = 100
+
 WIN_WIDTH= 576
 WIN_HEIGHT= 324
