@@ -1,6 +1,5 @@
-import pygame
 
-from code.const import WIN_WIDTH, ENTITY_SPEED, ENTITY_SHOOT_DELAY
+from code.const import ENTITY_SPEED, ENTITY_SHOOT_DELAY
 from code.enemyShoot import EnemyShoot
 from code.entity import Entity
 
