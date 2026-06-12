@@ -23,16 +23,16 @@ class Score:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.text(48, "YOU WIN!!", C_YELLOW, SCORE_POS['Title'])
+            score = player_score[0]
+            text = "Player One, enter your name (4 characters):"
             if game_mode == MENU_OPTION[0]:
                 score = player_score[0]
-                text = "Player One, enter your name (4 characters):"
             if game_mode == MENU_OPTION[1]:
                 score = (player_score[0 + 1] + player_score[1]) / 2
                 text = "Enter Team name (4 characters):"
             if game_mode == MENU_OPTION[2]:
                 if player_score[0] >= player_score[1]:
                     score = player_score[0]
-                    text = "Player One, enter your name (4 characters):"
                 else:
                     score = player_score[1]
                     text = "Player Two, enter your name (4 characters):"
